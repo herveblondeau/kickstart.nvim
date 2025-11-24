@@ -914,6 +914,13 @@ require('lazy').setup({
     end,
   },
 
+  { -- https://github.com/wellle/targets.vim
+    'wellle/targets.vim',
+    name = 'targets',
+    priority = 1000,
+    config = function() end,
+  },
+
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
